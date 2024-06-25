@@ -12,6 +12,7 @@
 
 ## Introduction
 We propose an adaptive and scalable draft tree structure in speculative decoding, which supports for any autoregressive draft models.
+![image](https://github.com/Jikai0Wang/OPT-Tree/main/case.png)
 
 ## Installation
 ```bash
@@ -58,3 +59,5 @@ python -m evaluation.eval_opt_eagle \
 		 --threshold 0.5 \
 		 --max_depth 10
 ```
+
+
