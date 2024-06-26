@@ -1,4 +1,5 @@
 # OPT-Tree: Speculative Decoding with Adaptive Draft Tree Structure
+Paper: [https://arxiv.org/abs/2406.17276](https://arxiv.org/abs/2406.17276)
 
 ## Contents
 - [Introduction](#Introduction)
