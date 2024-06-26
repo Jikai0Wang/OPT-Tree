@@ -10,6 +10,7 @@ Paper: [https://arxiv.org/abs/2406.17276](https://arxiv.org/abs/2406.17276)
 - [Evaluation on datasets](#Evaluation-on-datasets)
   - [With independent draft models](#With-independent-draft-models)
   - [With EAGLE draft models](#With-EAGLE-draft-models)
+- [Citation](#citation)
 
 ## Introduction
 ### OPT-Tree
@@ -62,4 +63,17 @@ python -m evaluation.eval_opt_eagle \
 		 --nodes 60 \
 		 --threshold 0.5 \
 		 --max_depth 10
+```
+
+## Citation
+```
+@misc{wang2024opttreespeculativedecodingadaptive,
+      title={OPT-Tree: Speculative Decoding with Adaptive Draft Tree Structure}, 
+      author={Jikai Wang and Yi Su and Juntao Li and Qinrong Xia and Zi Ye and Xinyu Duan and Zhefeng Wang and Min Zhang},
+      year={2024},
+      eprint={2406.17276},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+      url={https://arxiv.org/abs/2406.17276}, 
+}
 ```
