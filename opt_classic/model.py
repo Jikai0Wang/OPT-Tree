@@ -128,14 +128,14 @@ class SPModel(nn.Module):
         if hasattr(self, "draft_stable_kv") and self.draft_stable_kv is not None:
             kv_len = self.draft_stable_kv[0][0].shape[2]
             draft_outputs = self.draft_model.model(
-                input_ids=input_ids[:, kv_len:],
+                input_ids=input_ids[:, kv_len:].to(self.draft_model.model.embed_tokens.weight.device),
                 past_key_values=self.draft_stable_kv,
                 return_kv=True,
                 is_draft=True
             )
         else:
             draft_outputs = self.draft_model.model(
-                input_ids=input_ids,
+                input_ids=input_ids.to(self.draft_model.model.embed_tokens.weight.device),
                 return_kv=True,
                 is_draft=True
             )
